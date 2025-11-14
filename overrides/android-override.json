@@ -1759,6 +1759,12 @@
         },
         "gpc": {
             "state": "enabled",
+            "exceptions": [
+                {
+                    "domain": "musiciansfriend.com",
+                    "reason": "https://github.com/duckduckgo/privacy-configuration/pull/4073"
+                }
+            ],
             "settings": {
                 "gpcHeaderEnabledSites": [
                     "global-privacy-control.glitch.me",
@@ -3328,7 +3334,7 @@
             }
         },
         "webViewCompat": {
-            "state": "enabled",
+            "state": "disabled",
             "exceptions": [],
             "settings": {
                 "jsInitialPingDelay": 0,
@@ -3336,7 +3342,7 @@
             },
             "features": {
                 "jsSendsInitialPing": {
-                    "state": "enabled"
+                    "state": "disabled"
                 },
                 "jsRepliesToNativeMessages": {
                     "state": "disabled"
